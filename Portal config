@@ -1,0 +1,108 @@
+1. I added <?php include 'portal-config.php'?> on top of my header.php
+
+
+
+2. I added echo $_SERVER, define, and basename in my portal-config
+/*
+portal-config.php
+
+Used to store all of our WEB120 configuration information
+
+*/
+
+//echo $_SERVER(['PHP_SELF']);
+
+define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
+
+
+
+3. I added switch in my portal config. I also changed $logo, Slogo_color and $pageID each case.
+switch(THIS_PAGE){
+        
+    case 'index.php':
+        $title = " Hijiri's WEB120 Portal Page"; 
+        $logo = 'fa-id-card ';
+        $logo_color = ' style="color:#00ff00"';
+        $PageID = 'Welcome';
+    break;   
+        
+    case 'contactme.php':
+        $title = " Hijiri's WEB120 Contact Page"; 
+        $logo = 'fa-envelope-open';
+        $logo_color = ' style="color:#0000ff"';
+        $PageID = 'Contact Hijiri!';
+    break;  
+        
+    case 'aia.php':
+         $title = " Hijiri's Final Project AIA";
+         $logo = "fa-address-book-o";
+         $logo_color = ' style="color:#482765"';
+         $PageID = "Hijiri's AIA";        
+    break;
+        
+    case 'flowchart.php':
+         $title = " Hijiri's Final Project Flowchart & Template";
+         $logo = "fab fa-apple";
+         $logo_color = ' style="color:#482765"';
+         $PageID = "Hijiri's Flowchart & Template";        
+    break;    
+        
+    default:
+        $title = THIS_PAGE;
+        $logo = 'fa-home';
+        $PageID = 'welcome';
+        
+        
+    
+   4. I added ?=$title? in my header.php
+   <title><?=$title?></title>
+   
+   
+   
+   5. I added  <?=date('Y')?> in my footer.php
+   <p><small>copyright&copy;2020 - <?=date('Y')?> by <a href="contactme.php" target="_blank">Hijiri Maruo</a>, All Rights Reserved 
+   
+   
+   
+   6. I added  class="logo fa <?=$logo?>"<?=$logo_color?>></i><?=$title? in my header.php
+   <h1><a href="index.php"><i class="logo fa <?=$logo?>"<?=$logo_color?>></i><?=$title?> </a></h1>
+   
+   
+   
+   7. I added $nav1 in my portal-config
+   $nav1['index.php'] = "Welcome";
+$nav1['big/index.php'] = "Big";
+$nav1['aia.php'] = "AIA";
+$nav1['flowchart.php'] = "Flowchart";
+$nav1['fp/index.php'] ="Final Project";
+$nav1['contactme.php'] = "Contact Hijiri";
+
+
+
+8. I added makelinks in my portal config
+function makeLinks($nav1) 
+{
+    $myReturn = '';
+   foreach($nav1 as $url => $text){
+       
+       if($url == THIS_PAGE){
+           //selected page - add class reference
+               $myReturn .= "<li><a class=\"selected\" href=\"$url\">$text</a></li>";       
+       }else{
+           $myReturn .= "<li><a href=\"$url\">$text</a></li>";    
+       }
+       
+9. I added makelinks as $nav1
+   <?=makeLinks($nav1)?>    
+    <!-- START COMMENT OUT NAV
+      <li><a href="index.php" class="selected">Welcome</a></li>
+      <li><a href="big/index.php">Big</a></li>
+      <li><a href="aia.php">AIA</a></li>
+      <li><a href="flowchart.php">Flowchart</a></li>
+      <li><a href="fp/index.php">Final Project</a></li>
+      <li><a href="contactme.php">Contact Sara</a></li>
+	END COMMENT OUT NAV -->
+       
+       
+   
+   
