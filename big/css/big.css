@@ -1,0 +1,481 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+ .embed-container { 
+        position: relative; 
+        height:500px;  
+        overflow:hidden; 
+        width: 100%;
+     
+}
+
+ .embed-container iframe { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+}
+
+.embed-container2 { 
+         position: relative; 
+         height:300px; 
+         overflow: hidden; 
+         max-width: 100%; 
+} 
+
+.embed-container2 iframe { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+}
+
+.follow li {
+    margin-top: 20px;
+    float:left;
+    width:30%;
+    list-style:none;
+    display:inline-block;
+}
+
+.follow h4 {
+    text-align:left;
+    margin-bottom: 15px;
+}
+
+
+.follow img {
+    margin-bottom:20px; 
+    height:50px;
+    margin-left:40px;
+}
+
+section#flexbox li {
+    list-style-type: none;
+}
+  
+
+footer {
+	clear:both;
+    text-align:center ;
+    width:100%;
+    margin-bottom:20px;
+}
+
+footer img {
+     height:44px;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+
+#flexboxaside3 {
+    margin:20px;
+}
+
+#flexboxaside4 {
+    margin-bottom:20px;
+}
+
+#flexboxaside5 {
+    margin-bottom:20px;
+}
+
+#flexboxaside6 {
+    margin-bottom:20px;
+}
+
+#flexboxaside7 {
+    margin-bottom:20px;
+}
+
+#flexboxaside8 {
+    margin-bottom:20px;
+}
+
+#flexboxaside9 {
+    margin-bottom:20px;
+} 
+
+
+/* Desktops and laptops ----------- */
+@media all and (min-width:1280px) {
+  /* CSS rules */
+
+header {
+    width:100%;
+    background-color: aliceblue;
+    }
+
+header h1 {
+    position: relative;
+    bottom:100px;
+    text-align: center;
+    font-size:2em;
+    }
+    
+ img#logo {    
+    width:150px;
+    display:inline;
+    margin-left:230px;
+    border-radius:70%; 
+    margin-top:40px; 
+    }    
+
+nav {
+    width:100%;
+    height:50px;
+    background-color:#555;
+    }
+
+ul.topnav li {
+    list-style-type: none;
+    float:left;
+    width:12.5%;
+    font-weight:900;
+    text-align: center;
+    position:relative;
+    line-height: 50px;
+    }
+
+ul.topnav li a {
+    color:yellow;
+    text-decoration: none;
+    display:block;
+    
+    }
+
+ul.topnav li a:hover {
+    background:#888;
+    display:block;
+    }
+
+    .icon, row {
+        display:none;
+    }  
+    
+    .drop-down {
+    display:none;
+}
+
+ul.topnav li:hover .drop-down {
+    display:block;
+    background:#777;
+    width:100%;
+    position:absolute;
+    top:50px;
+    left:0;
+    z-index: 2;
+}
+
+ul.topnav li:hover .drop-down li {
+    float:none;
+    width:100%;
+    
+    }
+
+   section {
+    width:58%;
+    float:left;
+    margin:20px;   
+    }
+
+    aside {
+        margin:20px;
+        float:right;
+        width:35%;
+    
+    } 
+   
+    
+         aside h3, p {
+    padding-bottom:15px;
+}
+
+section h2 {
+    padding-bottom:10px;
+}
+
+
+
+.icon  {
+        display:none;
+    }   
+    
+.follow li {
+    float:left;
+    width:30%;
+    list-style:none;
+    display:inline-block;
+}
+
+.follow h4 {
+    text-align:left;
+    margin-bottom: 15px;
+}
+
+
+.follow img {
+    margin-bottom:20px; 
+    height:50px;
+    margin-left:40px;
+}
+
+    .embed-container.agenda-view {
+        display:none;
+    }    
+    
+    
+    
+    
+    
+    
+}
+
+/* Tablets  (portrait and landscape) ----------- */
+@media all and (min-width:768px) and (max-width:1279px) {
+  /* CSS rules */
+    
+header {
+    width:100%;
+    background-color:antiquewhite;
+    }
+
+header h1 {
+    position: relative;
+    
+    text-align: center;
+    font-size:2em;
+    }
+    
+  
+    .drop-down {
+    display:none;
+}
+
+
+ul.topnav li {
+    list-style-type: none;
+    float:left;
+    width:12.5%;
+    font-size:0.78em; 
+    font-weight:900;
+    text-align: center;
+    position:relative;
+    line-height: 50px;
+    }
+
+ul.topnav li a {
+    color:yellow;
+    text-decoration: none;
+    display:block;
+    
+    }
+
+ul.topnav li a:hover {
+    background:#999;
+    font-weight: 900;
+    display:block;
+    }
+    
+    
+ul.topnav li:hover .drop-down {
+    display:block;
+    background:#777;
+    width:100%;
+    position:absolute;
+    top:50px;
+    left:0;
+    z-index: 2;
+}
+
+ul.topnav li:hover .drop-down li {
+    float:none;
+    width:100%;
+    
+    }
+    
+    
+ img#logo {    
+    width:130px;
+    display:block;
+    margin:0 auto; 
+    border-radius:70%; 
+    padding-top:10px; 
+    }
+      
+nav {
+    width:100%;
+    height:50px;
+    background-color:#555;
+    }
+
+
+
+
+      
+    
+    .icon {
+        display:none;
+    }    
+
+    #flexbox {
+        width:100%;
+        padding:30px;
+        clear:both;       
+    }
+
+    #flexboxaside {
+        padding:30px;
+        width:100%;
+        clear:both;
+    
+    } 
+    
+
+     aside h3, p {
+    padding-bottom:15px;
+         
+}
+
+section h2 {
+    padding-bottom:10px;
+}
+
+    
+ .embed-container.agenda-view {
+        display:none;  
+     
+    }
+    
+    }
+    
+    
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width:767px) {
+/*   CSS rules */
+    
+    header {
+        width:100%;
+        background-color:beige;
+    }  
+
+    header h1 {
+    position: relative;
+    
+    text-align: center;
+    font-size:2.5em;
+    }
+    
+ img#logo {    
+    width:100px;
+    display:block;
+    margin:0 auto; 
+    border-radius:70%; 
+    padding-top:10px; 
+    }
+    
+   #flexbox {
+        width:100%;
+        padding:30px;
+        clear:both;
+    }
+
+    #flexboxaside {
+        padding:30px;
+        width:100%;
+        clear:both;
+    
+    } 
+    
+   #flexbox h2, p {
+    padding-bottom:15px;
+         
+}
+
+    #flexboxaside h3, p {
+    padding-bottom:10px;
+}
+
+    
+
+    
+
+   
+ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+   }    
+    
+    
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+    float:none;  
+  }
+    
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+    list-style-type: none;
+    float:left;
+    font-weight: 800;
+    position:relative;
+    
+    }
+ 
+
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+   
+    
+.embed-container.month-view {
+        display:none;    
+    
+    }
+    
+    
+}
+    
+    
